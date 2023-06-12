@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+  background-image: url("./image/wood.jpg");
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: local("BebasNeue"),
+   url("./fonts/BebasNeue-Regular.ttf") ;
+   font-family: "GotHeroin";
+   src: local("GotHeroin"),
+    url("./fonts/Got_Heroin.ttf") ;
+   font-weight: bold;
+ }
+.App-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+  font-family: GotHeroin;
+  color: white;
+  margin-right: 15px;
+  font-size: 29vh;
+}
+.scroll {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+.charEffect2{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  animation: flip 5s infinite;
+}
+@keyframes flip {
+  0%,80% {
+  transform: rotateY(360deg) 
+}
+}
+.charEffect3{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  transform: scale(0.81);
+  animation: flip 2s 
+}
+.white{
+  background-color: #fff;
+  min-height: 100vh;
+}
+.TitleEffect span{
+  position: relative;
+  animation: pulse;
+  animation-name: pulse;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+   text-decoration: none; 
+   
+}
+
+  .span:nth-child(1) {
+      animation-delay: 1 * 0.5s;
+  }
+  .span:nth-child(2) {
+    animation-delay: 12 * 0.5s;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes pulse{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity:.50;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all .1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100%{
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-body{
+  min-height: 90vh;
+}
