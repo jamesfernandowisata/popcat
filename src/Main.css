@@ -1,4 +1,12 @@
 .Main{
-    background-image: url(./image/background.jpg);
+    background-image: url(./image/catBackgroung.jpg);
     min-height: 100vh;
+    display: block;
+}
+.cat{
+    min-height: 100vh;
+}
+.catImg{
+    max-width: 100vh;
+    overflow: hidden;
 }
