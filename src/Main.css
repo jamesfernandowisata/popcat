@@ -1,12 +1,22 @@
 .Main{
     background-image: url(./image/catBackgroung.jpg);
     min-height: 100vh;
-    display: block;
 }
 .cat{
     min-height: 100vh;
+    display: inline-block;
 }
 .catImg{
     max-width: 100vh;
     overflow: hidden;
+}
+.foodImg{
+    max-width: 30vh;
+    overflow: hidden;
+}
+.food{
+    display: inline-block;
+}
+.span{
+    vertical-align: text-top;
 }
